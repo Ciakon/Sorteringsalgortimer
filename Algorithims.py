@@ -14,7 +14,7 @@ from typing import Callable
 running = True
 
 def setup() -> None:
-    global Window_width, Window_height, display, clock, title_map, stop
+    global Window_width, Window_height, display, clock, title_map
 
     Window_width = 1600
     Window_height = 800
@@ -26,8 +26,6 @@ def setup() -> None:
 
     title_map = {bubble_sort : "Bubble sort", selection_sort : "Selection sort", insertion_sort : "Insertion sort", merge_sort : "Merge sort", bogo_sort : "Bogo sort"}
 
-    stop = False
-    
 def text(text : str, x : int, y : int, size : int, color : str | tuple[int] = (160,160,160), center_text : bool = False) -> None:
     font = pygame.font.SysFont("Comic Sans MS", size)
     text_surface = font.render(text, True, color)
