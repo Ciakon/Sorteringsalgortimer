@@ -282,7 +282,7 @@ def animate(arr : list[int], visualisation : Callable = bar_show, algorithim : C
 
 #allows resizing, quitting, and other input during animation
 def window() -> None:
-    global running, Window_width, Window_height, display, title, algorithim, current_array, stop, visualization_algorithim
+    global running, Window_width, Window_height, display
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
